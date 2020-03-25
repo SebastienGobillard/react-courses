@@ -1,0 +1,41 @@
+@import '../../styles/_vars.sass'
+
+.containerSlider
+    width: 80%
+    height: 100%
+
+.indicators
+    color: $text-color
+
+.each-slide
+    text-align: center
+    padding-top: 120px
+    padding-bottom: 4px
+
+.img-carousel
+    width: 60%
+
+.react-slideshow-container .nav
+  height: 30px
+  background: #5dd4e8
+  width: 30px
+  z-index: 10
+  text-align: center
+  cursor: pointer
+  color: #fff
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0
+
+.react-slideshow-container + div.indicators > div.active 
+  background: #5dd4e8
+
+.react-slideshow-container + div.indicators > div
+  width: 16px
+  height: 16px
+  margin-right: 10px
+  border-radius: 50%
+  background: #ccc
+  cursor: pointer

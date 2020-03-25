@@ -1,0 +1,237 @@
+/**
+*imports
+*/
+@import 'src/styles/vars';
+
+.mainListContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 120px;
+    font-family: $font-family;
+    background-color:#F9F9F9;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3px;
+    //flex-wrap: wrap; 
+    text-align: center;  
+}
+
+.input{
+    margin: 0.2rem auto;
+    border-radius: 8px;
+    border : 2px solid #5dd4e8;
+    width: 70%;
+    font-family: $font-family;
+    text-align: center; 
+    padding: 6px;    
+}
+
+.form {
+    margin: 0.2rem auto;
+    border-radius: 8px;
+    border : 2px solid #5dd4e8;
+    width: 70%;
+    font-family: $font-family;
+    text-align: center; 
+    padding: 5px;  
+    height: 40px; 
+}
+
+button {
+    border-radius: 5px;
+    border-color: white;
+    background-color: $text-color;
+    color: white;
+    font-family: $font-family;
+    margin: 0.3rem auto;
+    //border : 2px solid white ;
+    text-align: center; 
+    padding: 5px; 
+    height: 35px;
+}
+
+.save-button {
+    display: flex;
+    flex-direction: column;
+}
+/*
+.delete-button {
+    flex-wrap: wrap;
+}*/
+
+.categories {
+    width: 70%;
+}
+
+.category {
+    width: 60%;
+    border-radius: 8px;
+    margin : 1rem auto;
+    box-shadow: 4px 4px 6px #D7D7D7;
+    transition: transform .1s;
+    background-color: #F2F2F2;
+    padding-top: calc(20px - 1rem);
+    height: 0 auto;
+}
+
+.category:hover {
+    // transform: scale(1.05);
+    // margin: 1rem auto;
+    font-family: $font-family;
+    color: $text-color;
+}
+
+.category>h3 {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    text-align: left;
+    margin: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 0.8rem;
+    filter: drop-shadow(1px 1px 2px #DCDCDC);
+    font-weight: bolder;
+}
+
+.items {
+display: flex;
+display: block;
+text-align: left;
+// width: 32%;
+// margin: 0 1rem;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+line-height: 1.2rem;
+background-color: #FFF;
+padding: 1rem ;
+color: #B6B6B6;
+}
+
+
+.items>li {
+    border-bottom: 1px solid rgb(238, 237, 237);
+    padding: 0.2rem;
+    background-color: white;
+    
+}
+
+.over {
+    text-decoration: line-through;
+    
+}
+
+.itemDetails>li {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.name {
+    width: 25%;
+}
+
+.favs-title {
+    margin-top: 3px 0;
+    cursor: ns-resize;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.favs-hidden {
+    display: none;
+}
+
+.favs {
+    width: 100%;
+    border-radius: 8px;
+    margin : auto;
+    margin-top: 0;
+    box-shadow: 4px 4px 6px #D7D7D7;
+    transition: transform .1s;
+    background-color: #F2F2F2;
+    padding-top: calc(20px - 1rem);
+    height: 0 auto;
+    text-align:center,
+}
+
+.favs-li{
+    cursor: pointer;
+    border-bottom: 1px solid rgb(238, 237, 237);
+    padding: 0.2rem;
+    background-color: white;
+}
+
+
+@media (min-width: 800px){
+.mainListContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 120px;
+    font-family: $font-family;
+    background-color:#F9F9F9;   
+}
+
+.inputs {
+    width: 60%;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.form {
+    border-radius: 8px;
+    border : 2px solid #5dd4e8;
+    align-self: flex-end;
+    //width: 30%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+
+}
+
+
+.input{
+    border-radius: 8px;
+    border : 2px solid #5dd4e8;
+    align-self: flex-end;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin: 0 2px;
+    display: flex;
+
+}
+
+.save-button {
+    display: flex;
+    //flex-wrap: wrap;
+    flex-direction: row;
+    padding: .6em;
+}
+
+.delete-button {
+    margin-left: 2px;
+}
+
+button {
+    border-radius: 8px;
+    background-color: $text-color;
+    color: white;
+    margin: 0.3rem auto;
+    height: 40px;
+    text-align: center; 
+    padding: 6px; 
+    align-self: center;   
+}
+
+}

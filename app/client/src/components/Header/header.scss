@@ -1,0 +1,152 @@
+/**
+ * Import
+ */
+ @import 'src/styles/vars';
+ 
+/**
+ * Styles
+ */
+
+$break-small: 319px;
+$break-medium: 764px;
+$break-large: 1023px;
+$break-extra-large: 2500px;
+
+
+#header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px #DCDCDC;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 0.5rem;
+  z-index: 100;
+}
+
+.logo-head {
+
+  width: 100%;
+  display: block;
+  filter: drop-shadow(1px 1px 2px #DCDCDC);
+
+  // @media screen and (max-width: $break-small) {
+  //   min-width: 18%;
+  // }
+}
+
+.logo-div {
+  width: 14em;
+  display: block;
+  filter: drop-shadow(1px 1px 2px #DCDCDC);
+
+  @media screen and (max-width: $break-small) {
+    max-width: 12%;
+  }
+}
+
+.picto-menu {
+  width: 2.5em;
+  margin-left: 1em;
+  filter: drop-shadow(1px 1px 2px #DCDCDC);
+
+  @media screen and (min-width: $break-large) {
+    display: none; 
+  }
+}
+
+.picto-compte {
+  width: 2.5em;
+  margin-right: .5rem;
+  filter: drop-shadow(1px 1px 2px #DCDCDC);
+  margin: 0 auto;
+
+  @media screen and (max-width: $break-large) {
+    margin-right: 3rem;
+  }
+}
+
+#menu {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+#nav-desktop {
+  
+  font-family: 'Open Sans', sans-serif;
+  flex-wrap: wrap;
+  padding-top: 1.5rem; 
+  width: 8rem;
+  
+  @media screen and (max-width: $break-large) {
+    display: none;
+  }
+}
+
+#nav2 {
+  
+  margin-right: 5%;
+  margin-left: 5%;
+  font-family: $font-family;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem; 
+  display: hidden;
+  
+  @media screen and (max-width: $break-large) {
+    display: none;
+  }
+}
+
+#nav:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 200ms, 300ms;
+}
+
+
+
+.picto-menu:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 300ms;
+
+  // @media screen and (max-width: $break-large) {
+  //   display: none;
+  // }
+}
+
+.picto-compte:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 200ms, 300ms;
+}
+
+.logo-head:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 200ms, 300ms;
+}
+
+#picto {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem; 
+}
+
+#a {
+  font-size: 0.8em;
+  text-shadow: 1px 1px 1px #DCDCDC;
+}
+
+#a:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 200ms, 300ms;
+  color: $text-color;
+  font-weight: bold; 
+}
+
+.active {
+  transform: scale(1.05, 1.05);
+  transition-duration: 200ms, 300ms;
+  color: $text-color;
+  font-weight: bold; 
+}
+

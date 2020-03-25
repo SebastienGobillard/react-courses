@@ -1,0 +1,86 @@
+@import 'src/styles/vars';
+
+.body {
+   position: relative;
+   width: 100%;
+}
+
+.formContainer {
+   width: 100%;
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   padding-top: 120px;
+   font-family: $font-family;
+   background-color:#F9F9F9;
+}
+
+.img-log {
+   width: 100px;
+   margin-top: 16px;
+   margin-bottom: 16px;
+}
+
+h1 {
+   margin-top: 200px;
+   font-size: 2em;
+}
+
+.form-logo {
+   width: 8rem;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   //border: 1px solid red;
+   margin: 2em auto;
+}
+
+.form-text {
+   //border: 1px solid red;
+   text-align: center;
+   font-size: 2em;
+   font-style: italic;
+   font-family: $font-family;
+}
+
+.form {
+   width: 100%;
+}
+
+.label {
+   font-size: 1em;
+   display: inline-block;
+   margin-left: .5em;
+   font-style: italic;
+   text-align: center;
+}
+
+.p-style {
+   color:  #B6B6B6;
+   display: block;
+   margin-left: 7em;
+   font-family: $font-family;
+}
+
+label {
+   text-align: center;
+}
+
+
+@media (max-width: 800px) {
+   .userForm {
+       width: 80%;
+   //    margin: 2rem;
+   }
+
+   .account-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   // .form-logo {
+   //     width: 50%;
+   // }
+
+}

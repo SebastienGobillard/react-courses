@@ -1,0 +1,254 @@
+@import 'src/styles/vars';
+
+.navigation {
+    display: block;
+    width:100%;
+    font-family: $font-family;
+    color: $text-color;
+    padding-left: 2.5rem;
+}
+
+.mainContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 120px;
+    font-family: $font-family;
+    background-color:#F9F9F9;
+}
+
+.box {
+    padding-top: 0.5rem;
+    height: 260px;
+    background-image: url(../Season/Octobre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+.mainContent {
+    width: 80%;
+    border-radius: 8px;
+    margin : 1rem auto;
+    
+    transition: transform .1s;
+    background-color: #F2F2F2;
+    padding-top: calc(20px - 1rem);
+}
+
+.topSpeech {
+    
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.5 auto;
+    margin: 0.8rem;
+}
+.gradient-box {
+    background: linear-gradient(to right, rgba(153,204,51,0.7), rgba(0,191,255,0.7));
+    box-shadow: 5px 5px 8px #D7D7D7;
+    width: 80%;
+    border-radius: 15px;
+    margin: 1.5rem auto;
+}
+
+.fred {
+    display: flex; /* contexte sur le parent */
+  align-items: center;
+  
+    
+}
+
+.fred-text {
+    color:#B6B6B6;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.fred-img {
+    flex-wrap: wrap;
+    width: 40%;
+    filter: drop-shadow(2px 2px 3px rgb(173, 173, 173));
+}
+
+.jamy {
+    display: flex; /* contexte sur le parent */
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.jamy-img {
+    flex-wrap: wrap;
+    width: 40%;
+    right: 0px;
+    z-index: 50;
+    margin-left: 1rem;
+    filter: drop-shadow(2px 2px 3px rgb(173, 173, 173));
+}
+
+.jamy-text {
+    color:#B6B6B6;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 1rem auto;
+    width: 100%;
+    margin-top: 1rem;
+    filter: drop-shadow(1px 1px 2px #DCDCDC);
+}
+
+.description {
+    padding: 1rem;
+}
+
+.mainContent:hover{
+    transform: scale(1.05);
+    width: 50;
+    margin: 1rem auto;
+
+}
+
+.title {
+    height: 20px;
+    text-align: left;
+    margin: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 0.8rem;
+    filter: drop-shadow(1px 1px 2px #DCDCDC);
+    font-weight: bolder;
+    color: $text-color;
+}
+    
+    
+.recette {
+    padding-top: 0.5rem;
+    height: 260px;
+    background-image: url(./recettes-crepes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.legumes {
+    padding-top: 0.5rem;
+    height: 260px;
+    background-image: url(./legumes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.summary {
+    display: block;
+    text-align: left;
+    width: 32%;
+    margin: 0 1rem;
+    border-radius: 10px;
+    line-height: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.880);
+    padding: 0.3rem ;
+    color: #B6B6B6;
+}
+
+.welcome {
+    background: linear-gradient(to right, rgba(153,204,51,0.7), rgba(0,191,255,0.7));
+    box-shadow: 5px 5px 8px #D7D7D7;
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+@media (min-width:1200px){
+    .navigation {
+        padding-left: 1rem;
+    }
+
+    .mainContent {
+    width: calc(50% - 2rem);
+    margin: 1rem 1rem;
+    
+    }
+
+    .mainContainer {
+        margin: auto;
+        width: 70%;
+        
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .recipe-items {
+        display: block;
+        
+    }
+
+    .summary-title {
+        font-weight: bold;
+        color: $text-color;
+        padding-bottom: 0.2rem;
+    }
+
+    .fred {
+        margin-left: 6rem;
+        margin-right: 5rem;
+    }
+
+    .jamy {
+        margin-top: 0px;
+        margin-right: 6rem;
+        margin-left: 17rem;
+    }
+
+    .slogan {
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin: 1rem auto;
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .gradient-box {
+        background: linear-gradient(to right, rgba(153,204,51,0.7), rgba(0,191,255,0.7));
+        box-shadow: 5px 5px 8px #D7D7D7;
+        width: 97%;
+        border-radius: 15px;
+        
+    }
+    .description {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .fred-img {
+        
+        width: 5rem;
+    }
+
+    .fred-text {
+        font-size: 1.1rem;
+    }
+
+    .jamy-text {
+        font-size: 1.1rem;
+     
+    }
+
+    .jamy-img {
+        width: 5rem;
+    }
+
+    .topSpeech {
+        padding: 2rem;
+    }
+}

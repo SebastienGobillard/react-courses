@@ -1,0 +1,130 @@
+
+@import 'src/styles/vars';
+
+   
+.footer-menu {
+    display: flex;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: center; 
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #DCDCDC;  
+}
+
+.nav-footer {
+    display: flex;
+    width: 30%;
+    color: $text-color;
+    font-size: .8em;
+    list-style: none;
+    font-style: italic;
+    padding: 1.2em;
+    justify-content: center;
+    font-family: $font-family;
+}
+
+.nav-footer-mobile {
+    width:100%;
+    display: flex;
+    color: $text-color;
+    font-size: .8em;
+    list-style: none;
+    font-style: italic;
+    padding: 1.2em;
+    justify-content: space-around;
+    font-family: $font-family;
+}
+
+.li {
+    margin-right: 1em;
+}
+
+.li-mobile {
+    
+    font-size: 0.9rem;
+}
+
+li a:hover {
+    transform: scale(1.05, 1.05);
+    transition-duration: 200ms, 300ms;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.footer {
+    height: 9em;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0px;
+}
+
+.addAList {
+
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    z-index: 100;
+    flex-wrap: wrap;
+    // float: right;
+    justify-content:flex-end;
+    // padding-right: 5rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 15px;
+    
+}
+
+.buttonLabel {
+    // display: flex;
+    flex-wrap: wrap;
+    width: 6rem;
+    line-height: 1.2em;
+    margin-right: 3px;
+    right: 0px;
+    
+}
+
+.list {
+    width: 20%;
+    // margin: auto;
+    text-align: right;
+    //width: 6rem;
+    justify-content: flex-end;
+    right: 16%;
+    //display: inline;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    font-family: $font-family;
+    font-size: 0.8em;
+    position: fixed;
+    right: 1%;
+    bottom: 8%;
+}
+
+.addlist {
+    // width: 70%;
+    justify-content: flex-end;
+    width: 4em;
+    filter: drop-shadow(1px 1px 2px #DCDCDC); 
+    flex-wrap: wrap;
+}
+
+.addlist:hover {
+    transform: rotate(90deg);
+    transition-duration: 200ms, 300ms;
+    filter: drop-shadow(1px 1px 2px #DCDCDC);
+}
+
+
+@media (max-width: 800px){
+
+    .addAList {
+        // width: 80%;
+    }
+    .list {
+        right: 1%;
+    }
+}
